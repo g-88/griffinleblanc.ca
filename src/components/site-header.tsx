@@ -1,3 +1,4 @@
+import { ContactAction } from "@/components/contact-action";
 import { profile } from "@/data/profile";
 
 export function SiteHeader() {
@@ -22,12 +23,12 @@ export function SiteHeader() {
         >
           Resume
         </a>
-        <a
+        <ContactAction
           className="transition hover:text-stone-950"
-          href={profile.links.email}
+          email={profile.email}
         >
           Contact
-        </a>
+        </ContactAction>
       </nav>
     </header>
   );

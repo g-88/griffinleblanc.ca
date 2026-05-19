@@ -9,7 +9,7 @@ export function OperatingStyle() {
             Operating style
           </p>
           <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
-            Strong where product, systems, and rollout reality meet.
+            I’m useful when a feature has to survive the real world.
           </h2>
         </div>
         <div className="grid gap-5 sm:grid-cols-3">

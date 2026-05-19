@@ -11,8 +11,7 @@ export function FeaturedWork() {
           Featured work
         </p>
         <h2 className="mt-4 text-3xl font-semibold text-stone-950 sm:text-4xl">
-          Product briefs from shipped work, early product bets, and production
-          fintech systems.
+          A few places where product work met real-world constraints.
         </h2>
       </div>
       <div className="mt-12 divide-y divide-stone-200 border-y border-stone-200">
@@ -28,6 +27,16 @@ export function FeaturedWork() {
               <p className="mt-2 text-sm font-medium uppercase tracking-[0.18em] text-stone-500">
                 {work.label}
               </p>
+              {"siteUrl" in work ? (
+                <a
+                  className="mt-5 inline-flex items-center text-sm font-medium text-emerald-700 underline decoration-emerald-700/30 underline-offset-4 transition hover:text-stone-950 hover:decoration-stone-950"
+                  href={work.siteUrl}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Visit site
+                </a>
+              ) : null}
             </div>
             <div>
               <p className="text-lg leading-8 text-stone-700">

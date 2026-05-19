@@ -4,9 +4,9 @@ export const profile = {
   location: "Ottawa, ON",
   email: "griffin.leblanc@gmail.com",
   tagline:
-    "I build full-stack product systems for regulated, operationally complex teams.",
+    "I build full-stack products for messy operational problems.",
   summary:
-    "Product-minded full-stack software engineer with a finance and operations background, building production web applications, regulatory logic, internal tooling, QA automation, and rollout workflows across fintech environments.",
+    "I’m a full-stack engineer with a finance and operations background. Most of my work sits where product, compliance, QA, and support all have opinions.",
   links: {
     email: "mailto:griffin.leblanc@gmail.com",
     github: "https://github.com/g-88",
@@ -29,14 +29,34 @@ export const profile = {
   ],
   featuredWork: [
     {
+      name: "Bitcoin Depot / Bitaccess",
+      label: "Production fintech engineering",
+      summary:
+        "Fintech product work that had to survive real kiosks, real regulations, and real rollout pressure.",
+      details: [
+        "Built state-based regulatory rules with json-rules-engine and production scripts.",
+        "Led pricing and fees work that touched customer-facing flows, rules, and production rollout details.",
+        "Became a go-to engineer for production rollouts, escalations, and cross-repo troubleshooting.",
+      ],
+      stack: [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Node.js",
+        "MongoDB",
+        "AWS",
+        "Docker",
+      ],
+    },
+    {
       name: "Faceout",
       label: "Founder / Developer",
+      siteUrl: "https://faceout.ca",
       summary:
-        "Ottawa-based web studio focused on modern local-business websites, SEO, Google Business Profile support, reusable components, and production client delivery.",
+        "My small Ottawa web studio for local businesses that need a useful site, not a brand manifesto.",
       details: [
-        "Ships polished local-business sites with a practical focus on discoverability and conversion.",
-        "Uses reusable monorepo patterns and component systems to keep client delivery fast and consistent.",
-        "Includes production delivery work for James Melia Financial Services.",
+        "Focuses on local search, clean pages, and obvious ways for customers to get in touch.",
+        "Uses reusable pieces so projects move quickly without all looking the same.",
       ],
       stack: [
         "Next.js",
@@ -51,12 +71,12 @@ export const profile = {
     {
       name: "PermiPro",
       label: "Founding Engineer",
+      siteUrl: "https://permipro.io",
       summary:
-        "Municipal permit SaaS concept combining product discovery, workflow automation, and full-stack implementation planning.",
+        "Early SaaS work around municipal permits: forms, follow-ups, missing context, and admin drag.",
       details: [
-        "Shaped MVP direction around permit workflows and municipal process friction.",
-        "Mapped automation opportunities where applicants, contractors, and municipalities lose time.",
-        "Balanced product discovery with implementation planning for a focused first release.",
+        "Mapped where applicants, contractors, and municipalities lose the most time.",
+        "Kept the MVP pointed at one useful workflow instead of a giant platform.",
       ],
       stack: [
         "SaaS",
@@ -65,40 +85,19 @@ export const profile = {
         "MVP planning",
       ],
     },
-    {
-      name: "Bitcoin Depot / Bitaccess",
-      label: "Production fintech engineering",
-      summary:
-        "Full-stack engineering and rollout ownership across regulated fintech products, internal systems, QA workflows, and production troubleshooting.",
-      details: [
-        "Owned a custom state-based regulatory rules epic using json-rules-engine and production scripts.",
-        "Contributed to Cash On-Ramp, transforming kiosk workflows so customers can deposit cash and buy BTC asynchronously.",
-        "Improved QA throughput with remote BTM simulator testing and clearer analytics log inspection.",
-        "Supported acquisition rollout work involving 8,000+ Bitcoin ATMs while bridging engineering, operations, compliance, support, and sales.",
-      ],
-      stack: [
-        "React",
-        "Next.js",
-        "TypeScript",
-        "Node.js",
-        "MongoDB",
-        "AWS",
-        "Docker",
-      ],
-    },
   ],
   operatingStyle: [
     {
-      title: "Product-minded",
-      body: "I care about the workflow, the user, and the operational consequence of the feature, not just the ticket boundary.",
+      title: "I like messy workflows.",
+      body: "The useful problems are usually half product, half operations, and only then code.",
     },
     {
-      title: "Operations-aware",
-      body: "I bring implementation, rollout, QA, support, and compliance context into engineering decisions.",
+      title: "I care about rollout.",
+      body: "A feature is not done just because it works locally. Someone has to test it, ship it, support it, and explain it.",
     },
     {
-      title: "Useful in ambiguity",
-      body: "I can turn unclear production issues, rollout needs, and business constraints into concrete technical next steps.",
+      title: "I stay close to production.",
+      body: "Logs, edge cases, customer impact, support noise, and weird constraints all belong in the engineering conversation.",
     },
   ],
 } as const;

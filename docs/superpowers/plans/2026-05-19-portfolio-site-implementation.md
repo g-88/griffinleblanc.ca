@@ -29,7 +29,7 @@ Create and own these files:
 - `src/components/featured-work.tsx`: project and experience summaries.
 - `src/components/operating-style.tsx`: working style proof section.
 - `src/components/site-footer.tsx`: footer links and contact.
-- `public/resume/griffin-leblanc-resume.docx`: resume asset copied from the existing resume workspace.
+- `public/resume/griffin-leblanc-resume.pdf`: resume asset copied from the provided job-search folder.
 - `README.md`: local setup and deployment notes.
 
 Do not add a CMS, blog, case-study routes, or animation framework in the first version.
@@ -119,7 +119,7 @@ export const profile = {
     email: "mailto:griffin.leblanc@gmail.com",
     github: "https://github.com/g-88",
     linkedin: "https://www.linkedin.com/in/griffinleblanc",
-    resume: "/resume/griffin-leblanc-resume.docx",
+    resume: "/resume/griffin-leblanc-resume.pdf",
   },
   proofPoints: [
     "React",
@@ -604,27 +604,27 @@ Expected: commit succeeds.
 ## Task 5: Add Resume Asset And README
 
 **Files:**
-- Create: `public/resume/griffin-leblanc-resume.docx`
+- Create: `public/resume/griffin-leblanc-resume.pdf`
 - Create: `README.md`
 - Modify: `src/data/profile.ts`
 
-- [ ] **Step 1: Copy the existing resume DOCX**
+- [ ] **Step 1: Copy the provided resume PDF**
 
 Run:
 
 ```bash
 mkdir -p public/resume
-cp /Users/g-cash/Documents/Codex/2026-05-18/help-me-build-a-resume-here/Griffin-LeBlanc-Full-Stack-Software-Engineer-Resume.docx public/resume/griffin-leblanc-resume.docx
+cp "/Users/g-cash/Documents/Job Search 2026/griffin-leblanc-resume.pdf" public/resume/griffin-leblanc-resume.pdf
 ```
 
-Expected: `public/resume/griffin-leblanc-resume.docx` exists.
+Expected: `public/resume/griffin-leblanc-resume.pdf` exists.
 
-- [ ] **Step 2: Confirm resume link uses DOCX asset**
+- [ ] **Step 2: Confirm resume link uses PDF asset**
 
 Confirm `src/data/profile.ts` contains:
 
 ```ts
-resume: "/resume/griffin-leblanc-resume.docx",
+resume: "/resume/griffin-leblanc-resume.pdf",
 ```
 
 - [ ] **Step 3: Create `README.md`**
@@ -667,7 +667,7 @@ If deploying with Cloudflare Pages, use:
 
 ## Resume
 
-The resume link points to `/resume/griffin-leblanc-resume.docx`.
+The resume link points to `/resume/griffin-leblanc-resume.pdf`.
 ````
 
 - [ ] **Step 4: Run build**
@@ -685,7 +685,7 @@ Expected: build passes.
 Run:
 
 ```bash
-git add README.md public/resume/griffin-leblanc-resume.docx src/data/profile.ts
+git add README.md public/resume/griffin-leblanc-resume.pdf src/data/profile.ts docs/superpowers/plans/2026-05-19-portfolio-site-implementation.md
 git commit -m "docs: add portfolio setup notes and resume asset"
 ```
 
@@ -810,4 +810,4 @@ Expected: commit succeeds.
 
 - Spec coverage: homepage narrative, full-stack/product positioning, Faceout, PermiPro, Bitcoin Depot / Bitaccess, responsive design, simple local content model, deploy-readiness, and no-CMS/no-blog constraints are covered.
 - Scope: this plan keeps version one to a single homepage and repo setup.
-- Risk: the first version links the existing DOCX resume asset. A later polish pass can export and swap in a PDF without changing the site architecture.
+- Risk: the first version links the provided PDF resume asset. A later polish pass can add a DOCX download only if recruiters specifically ask for one.

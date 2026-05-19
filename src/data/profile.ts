@@ -11,7 +11,7 @@ export const profile = {
     email: "mailto:griffin.leblanc@gmail.com",
     github: "https://github.com/g-88",
     linkedin: "https://www.linkedin.com/in/griffinleblanc",
-    resume: "/resume/griffin-leblanc-resume.docx",
+    resume: "/resume/griffin-leblanc-resume.pdf",
   },
   proofPoints: [
     "React",

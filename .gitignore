@@ -23,6 +23,10 @@
 # misc
 .DS_Store
 *.pem
+.tmp/
+
+# agent workflow (local planning only)
+docs/superpowers/
 
 # debug
 npm-debug.log*

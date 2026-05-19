@@ -17,6 +17,10 @@ Open `http://localhost:3000`.
 npm run build
 ```
 
+## Analytics
+
+Vercel Analytics is enabled via `@vercel/analytics` when deployed on Vercel. Turn on Analytics for the project in the [Vercel dashboard](https://vercel.com/docs/analytics).
+
 ## Deployment
 
 The site is intended for `griffinleblanc.ca`, with DNS managed in Cloudflare.

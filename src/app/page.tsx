@@ -1,15 +1,21 @@
-import { profile } from "@/data/profile";
+import { FeaturedWork } from "@/components/featured-work";
+import { HeroSection } from "@/components/hero-section";
+import { OperatingStyle } from "@/components/operating-style";
+import { ProofStrip } from "@/components/proof-strip";
+import { SiteFooter } from "@/components/site-footer";
+import { SiteHeader } from "@/components/site-header";
 
 export default function Home() {
   return (
-    <main>
-      <h1>{profile.name}</h1>
-      <p>{profile.tagline}</p>
-      <ul>
-        {profile.featuredWork.map((work) => (
-          <li key={work.name}>{work.name}</li>
-        ))}
-      </ul>
-    </main>
+    <>
+      <SiteHeader />
+      <main>
+        <HeroSection />
+        <ProofStrip />
+        <FeaturedWork />
+        <OperatingStyle />
+      </main>
+      <SiteFooter />
+    </>
   );
 }

@@ -87,7 +87,7 @@ export const profile = {
 	operatingStyle: [
 		{
 			title: 'I like messy workflows.',
-			body: 'The useful problems are usually half product, half operations, and only then code.',
+			body: 'The interesting work usually spans product, operations, and engineering—not just the code.',
 		},
 		{
 			title: 'I care about rollout.',
